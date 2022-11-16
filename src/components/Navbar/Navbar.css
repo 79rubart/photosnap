@@ -1,0 +1,42 @@
+.c-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 5%;
+
+    font-weight: var(--weight-strong);
+    letter-spacing: var(--button-space);
+    text-transform: uppercase;
+}
+
+.c-navbar__item{
+    cursor:pointer;
+}
+
+.c-navbar__menu{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+
+}
+
+.c-navbar__hamburger{
+    display: none;
+}
+.c-navbar__hamburger--active:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.c-navbar__hamburger--active:nth-child(2){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.c-hamburger__bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-color: var(--black);
+}
