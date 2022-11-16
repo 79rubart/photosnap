@@ -1,0 +1,45 @@
+.c-pricing__card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 24.3%;
+}
+
+.c-pricing__card--bgLightGrey {
+    color: var(--black);
+    background-color: var(--light-grey);
+}
+
+.c-pricing__card--bgBlack {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.c-pricing__card--small {
+    padding: 3.73rem 2.66rem 2.66rem 2.66rem;
+}
+
+.c-pricing__card--big {
+    padding: 5.86rem 2.66rem 4.73rem 2.66rem;
+    margin: 0 2rem;
+}
+
+.c-pricing__card div {
+    margin: 0 0 2.66rem 0;
+}
+
+.c-pricing__card h3 {
+    font-weight: var(--weight-strong);
+    font-size: 1.6rem;
+}
+
+.c-pricing__card p {
+    opacity: 0.6;
+}
+
+.c-pricing__card span {
+    font-size: 2.66rem;
+    font-weight: var(--weight-strong);
+}
