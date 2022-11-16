@@ -9,6 +9,7 @@
   --black: #000;
   --white: #FFF;
   --light-grey: #DFDFDF;
+  --main-accent: linear-gradient(26.57deg, #FFC593 0.42%, #BC7198 43.46%, #5A77FF 83.33%);
 
   /* typography */
   --font-family: 'DM Sans', sans-serif;
