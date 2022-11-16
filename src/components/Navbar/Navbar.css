@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 2rem 5%;
+    padding: 2rem 0;
 
     font-weight: var(--weight-strong);
     letter-spacing: var(--button-space);
