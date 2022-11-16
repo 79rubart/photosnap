@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Link } from 'react-router-dom'
 import logo from '../../assets/img/logo.png'
+import BtnDefault from '../BtnDefault'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -22,6 +23,7 @@ const Navbar = () => {
                         <Link to='/pricing'>Pricing</Link>
                     </li>
                 </ul>
+                <BtnDefault bgColor='black' text='Get an invite' />
                 <div className='c-navbar__hamburger' onClick={() => {setIsActive(!isActive)}}>
                     <span className='c-hamburger__bar'></span>
                     <span className='c-hamburger__bar'></span>
