@@ -1,0 +1,20 @@
+.c-btn__default {
+    padding: .8rem 1.6rem;
+    border: none;
+
+    font-family: var(--font-family);
+    font-weight: var(--weight-strong);
+    letter-spacing: var(--button-space);
+    text-align: center;
+    
+}
+
+.c-btn__default--bgBlack {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.c-btn__default--bgWhite {
+    color: var(--black);
+    background-color: var(--white);
+}
