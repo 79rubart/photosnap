@@ -9,8 +9,14 @@
     text-transform: uppercase;
 }
 
-.c-navbar__item{
-    cursor:pointer;
+.c-navbar__item a{
+    color: var(--black);
+    font-weight: var(--weight-strong);
+    text-decoration: none;    
+}
+
+.c-navbar__item a:hover{
+    opacity: .4;
 }
 
 .c-navbar__menu{
