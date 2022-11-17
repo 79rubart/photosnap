@@ -1,0 +1,14 @@
+.l-features {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    text-align: center;
+    width: 77%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+
+.l-features--middle {
+    margin: 0 2rem;
+}
