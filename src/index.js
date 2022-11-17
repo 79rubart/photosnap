@@ -19,12 +19,28 @@ const Layout = () => {
 }
 
 const router = createBrowserRouter([
-
+  {
+    element: <Layout />,
+    children: [
       {
         path: '/',
         element: <Home />
       },
-])
+      {
+        path: '/stories',
+        element: <div>STORIES</div>
+      },
+      {
+        path: '/features',
+        element: <div>FEATURES</div>
+      },
+      {
+        path: '/pricing',
+        element: <div>PRICING</div>
+      },
+    ],
+  },
+]);
 
 root.render(
   <React.StrictMode>
