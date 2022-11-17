@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
-    width: 24.3%;
+    width: 100%;
 }
 
 .c-pricing__card--bgLightGrey {
@@ -18,11 +18,11 @@
 }
 
 .c-pricing__card--small {
-    padding: 3.73rem 2.66rem 2.66rem 2.66rem;
+    padding: 6% 3% 5% 3%;
 }
 
 .c-pricing__card--big {
-    padding: 5.86rem 2.66rem 4.73rem 2.66rem;
+    padding: 8% 3% 7% 3%;
     margin: 0 2rem;
 }
 
