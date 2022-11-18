@@ -1,0 +1,40 @@
+.c-benefits-table-section {
+    width: 50.76%;
+    margin: 9.33rem auto 10.67rem auto;
+}
+
+.c-benefits-table {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    font-weight: var(--weight-strong);
+    border-bottom: 1px solid #000;
+    text-transform: uppercase;
+}
+
+.c-benefits__table-text {
+    font-size: 2.66rem;
+    text-align: center;
+    margin: 0 0 3.73rem 0;
+}
+
+.c-benefits__table-titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 1.53rem 0;
+}
+
+.c-benefits__features {
+    margin: 0 0 0 1.6rem;
+}
+
+.c-benefits__table-plans {
+    display: flex;
+    flex-direction: row;
+    margin: 0 2.9rem 0 0;
+}
+
+.c-benefits__table-pro {
+    margin: 0 4rem;
+}
