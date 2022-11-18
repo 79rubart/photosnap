@@ -1,8 +1,13 @@
 import React from 'react'
 import BtnArrow from '../BtnArrow'
 import './MainCard.css'
+import { useMediaQuery } from 'react-responsive'
 
 const MainCard = (props) => {
+
+  const desktop = useMediaQuery({minWidth: 1441})
+  const tablet = useMediaQuery({minWidth: 769, maxWidth: 1440})
+  const mobile = useMediaQuery({maxWidth: 768})
     
     return (
     <section className={props.textPosition === 'right' ? 
@@ -18,7 +23,10 @@ const MainCard = (props) => {
           ) : ''
         }
       </div>
-      <img src={props.img} alt={props.alt} />
+      {desktop && <img src={props.desktop} alt={props.alt} />}
+      {tablet && <img src={props.tablet} alt={props.alt} />}
+      {mobile && <img src={props.mobile} alt={props.alt} />}
+      
     </section>
   )
 }
