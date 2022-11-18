@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../assets/img/logo_white.png'
+import logo from '../../assets/img/logo_white.svg'
 import facebook from '../../assets/img/shared/desktop/facebook.svg'
 import instagram from '../../assets/img/shared/desktop/instagram.svg'
 import pinterest from '../../assets/img/shared/desktop/pinterest.svg'
