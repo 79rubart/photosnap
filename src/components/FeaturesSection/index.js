@@ -10,49 +10,49 @@ import image from "../../assets/img/features/desktop/drag-drop.svg"
 const FeaturesSection = (props) => {
     return (
         <section className="l-features">
-            <div>
+            
                 <FeatureCard
                     icon={responsive}
                     title="100% Responsive"
                     description="No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen."
                 />
-            </div>
-            <div className="l-features--middle">
+            
+            
                 <FeatureCard
                     icon={noLimit}
                     title="No Photo Upload Limit"
                     description="Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go."
                 />
-            </div>
-            <div>
+            
+            
                 <FeatureCard
                     icon={embed}
                     title="Available to Embed"
                     description="Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more."
                 />
-            </div>
-            <div className={props.featPage === true ? "" : "l-features--hide"}>
+            
+        
                 <FeatureCard
                     icon={domain}
-                    title="Available to Embed"
-                    description="Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more."
+                    title="Custom Domain"
+                    description="With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!"
                 />
-            </div>
             
-            <div className={props.featPage === true ? "" : "l-features--hide"}>
+            
+        
                 <FeatureCard
                     icon={exposure}
-                    title="Available to Embed"
-                    description="Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more."
+                    title="Boost Your Exposure"
+                    description="Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list."
                 />
-            </div>
-            <div className={props.featPage === true ? "" : "l-features--hide"}>
+            
+        
                 <FeatureCard
                     icon={image}
-                    title="Available to Embed"
-                    description="Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more."
+                    title="Drag & Drop Image"
+                    description="Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories."
                 />
-            </div>
+            
             
         </section>
     )
