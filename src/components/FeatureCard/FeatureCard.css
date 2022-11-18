@@ -10,6 +10,10 @@
 
 }
 
+.c-feature-card__card--hide{
+    display: none;
+}
+
 .c-feature-card__card img {
     min-height: 4rem;
     min-width: 5rem;
@@ -45,3 +49,4 @@
         padding: 0;
     }
 }
+
