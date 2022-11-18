@@ -3,8 +3,11 @@ import FeatureCard from "../FeatureCard";
 import embed from "../../assets/img/features/desktop/embed.svg"
 import noLimit from "../../assets/img/features/desktop/no-limit.svg"
 import responsive from "../../assets/img/features/desktop/responsive.svg"
+import domain from "../../assets/img/features/desktop/custom-domain.svg"
+import exposure from "../../assets/img/features/desktop/boost-exposure.svg"
+import image from "../../assets/img/features/desktop/drag-drop.svg"
 
-const FeaturesSection = () => {
+const FeaturesSection = (props) => {
     return (
         <section className="l-features">
             <div>
@@ -28,6 +31,29 @@ const FeaturesSection = () => {
                     description="Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more."
                 />
             </div>
+            <div className={props.featPage === true ? "" : "l-features--hide"}>
+                <FeatureCard
+                    icon={domain}
+                    title="Available to Embed"
+                    description="Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more."
+                />
+            </div>
+            
+            <div className={props.featPage === true ? "" : "l-features--hide"}>
+                <FeatureCard
+                    icon={exposure}
+                    title="Available to Embed"
+                    description="Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more."
+                />
+            </div>
+            <div className={props.featPage === true ? "" : "l-features--hide"}>
+                <FeatureCard
+                    icon={image}
+                    title="Available to Embed"
+                    description="Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more."
+                />
+            </div>
+            
         </section>
     )
 }
