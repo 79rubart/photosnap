@@ -12,3 +12,7 @@
 .l-features--middle {
     margin: 0 2rem;
 }
+
+.l-features--hide{
+    display: none;
+}
