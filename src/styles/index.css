@@ -18,7 +18,7 @@
   --weight-strong: 700;
 
   --size-body: 15px;
-  --size-h1-2-large:2.7rem;
+  --size-h1-2-large:2.6rem;
   --size-large: 1.6rem;
   --size-medium: 1.2rem;
   --size-small: .8rem; /* button */
@@ -35,4 +35,10 @@ body{
   font-family: var(--font-family);
   font-size: var(--size-body);
   font-weight: var(--weight-regular);
+}
+
+@media screen and (max-width: 768px) {
+  main:nth-child(2){
+    margin-top: 11rem;
+  }
 }
