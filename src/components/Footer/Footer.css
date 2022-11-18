@@ -1,55 +1,112 @@
-.l-footer{
+.l-footer {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     background-color: var(--black);
-    padding: 4rem 8rem;
+    padding: 4rem 8%;
     min-height: 250px;
 }
 
 
-.l-footer a:hover{
+.l-footer a:hover {
     opacity: .5;
 }
 
-.l-footer__logo-social{
+.l-footer__logo-social {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.l-footer__social{
+.l-footer__social {
     display: flex;
     justify-content: space-between;
 }
 
-.l-footer__logo-nav{
+.l-footer__logo-nav {
     display: flex;
     gap: 50%;
 }
 
-.l-footer__nav{
+.l-footer__nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.l-footer__nav a{
+.l-footer__nav a {
     color: var(--white);
     font-family: var(--font-family);
     font-weight: var(--weight-strong);
+    letter-spacing: var(--button-space);
     text-decoration: none;
-    text-transform: uppercase;    
+    text-transform: uppercase;
     padding: 2rem;
 }
 
-.l-footer__call-action{
+.l-footer__call-action {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
+    margin-top: -1rem;
 }
 
-.l-footer__copy{
+.l-footer__copy {
     color: var(--white);
     opacity: .5;
+}
+
+@media screen and (max-width:1440px) {
+    .l-footer {
+        min-height: 20rem;
+        padding: 4rem 4%;
+    }
+
+    .l-footer__logo-nav {
+        gap: 0;
+        width: 50%;
+    }
+
+    .l-footer__nav {
+        position: relative;
+        top: 3rem;
+        right: 12.7rem;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .l-footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .l-footer__logo-social{
+        gap: 2rem;
+    }
+
+    .l-footer__social{
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .l-footer__logo-nav{
+        flex-direction: column;
+    }
+
+    .l-footer__nav{
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    
+    position: initial;
+    margin-top: 3rem;
+}
+
+    .l-footer__call-action{
+        align-items: center;
+        margin-top: 8rem;
+        gap: 2rem;
+    }
 }
