@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100vw;
     padding: 2rem 0;
 
     background-color: var(--white);
@@ -41,6 +41,17 @@
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     background-color: var(--black);
+}
+
+@media only screen and (max-width: 1440px) {
+    .c-navbar{
+        justify-content: space-between;
+        padding: 2rem 2.5rem;
+    }
+
+    .c-navbar__menu{
+        gap: 1rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -82,5 +93,9 @@
 
     .c-navbar__hamburger--active .c-hamburger__bar:nth-child(2) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .c-btn__default{
+        display: none;
     }
 }
