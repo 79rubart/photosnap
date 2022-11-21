@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Features from './pages/Features';
 import Stories from './pages/Stories';
+import Pricing from './pages/Pricing'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/pricing',
-        element: <div>PRICING</div>
+        element: <Pricing />
       },
     ],
   },
