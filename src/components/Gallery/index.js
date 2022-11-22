@@ -1,26 +1,31 @@
 import React from 'react'
-import { useEffect, useState } from "react"
-import { getDocs, collection } from 'firebase/firestore'
-import { db } from '../../firebase/config'
+import { useState } from "react"
+import { storage } from '../../firebase/config'
+import { getDownloadURL, ref } from 'firebase/storage'
+import { uuidv4 } from '@firebase/util'
+import useImageCollection from '../../firebase/useImageCollection'
+
+
 const Gallery = () => {
 
-    const [images, setImages] = useState('')
-    const imageCollectionRef = collection(db, 'photo-gallery')
-
-    useEffect(() => {
-        const getData = async () => {
-            const data = await getDocs(imageCollectionRef)
-            console.log(data)
-        }
-        getData();
-    }, [])
+    const [url, setUrl] = useState('')
 
     return (
-        <div>
-
-        </div>
+        <section>
+            {useImageCollection().map((cardImage) => {
+                const reference = ref(storage, cardImage.src[0])
+                getDownloadURL(ref(storage, reference)).then((x) => {
+                    setUrl(x)
+                })
+                
+            return (
+            <div key={uuidv4}>
+                <img src={url} alt='' />
+            </div>
+        )
+            })}
+        </section>
     )
-
 }
 
 export default Gallery
