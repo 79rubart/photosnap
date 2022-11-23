@@ -38,3 +38,29 @@
 .c-benefits__table-pro {
     margin: 0 4rem;
 }
+
+@media screen and (max-width:1440px){
+    .c-benefits-table-section {
+        width: 90%;
+        margin: 7.46rem auto;
+    }
+}
+
+@media screen and (max-width:768px){
+    .c-benefits-table-section {
+        width: 85%;
+        margin: 4.26rem auto;
+    }
+
+    .c-benefits__table-text {
+        display: none;
+    }
+
+    .c-benefits__features {
+        margin: 0;
+    }
+
+    .c-benefits__table-plans span {
+        display: none;
+    }
+}
