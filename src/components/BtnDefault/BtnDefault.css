@@ -20,3 +20,9 @@
     color: var(--black);
     background-color: var(--white);
 }
+
+@media screen and (max-width:1440px){
+    .c-btn__default--big {
+        width: 50%;
+    }
+}

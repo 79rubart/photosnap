@@ -23,50 +23,74 @@ const BenefitsTable = (props) => {
             <div className="c-benefits-table-rows">
                 <BenefitsRow
                 text="Unlimited Story Posting"
+                basic={true}
                 basicCheck={true}
+                pro={true}
                 proCheck={true}
+                business={true}
                 businessCheck={true}
                 />
                 <BenefitsRow
                 text="Unlimited Photo Uploading"
+                basic={true}
                 basicCheck={true}
+                pro={true}
                 proCheck={true}
+                business={true}
                 businessCheck={true}
                 />
                 <BenefitsRow
                 text="Embedding Custom Content"
+                basic={true}
                 basicCheck={false}
+                pro={true}
                 proCheck={true}
+                business={true}
                 businessCheck={true}
                 />
                 <BenefitsRow
                 text="Customize Metadata"
+                basic={true}
                 basicCheck={false}
+                pro={true}
                 proCheck={true}
+                business={true}
                 businessCheck={true}
                 />
                 <BenefitsRow
                 text="Advanced Metrics"
+                basic={true}
                 basicCheck={false}
+                pro={true}
                 proCheck={false}
+                business={true}
                 businessCheck={true}
                 />
                 <BenefitsRow
                 text="Photo Downloads"
+                basic={true}
                 basicCheck={false}
+                pro={true}
                 proCheck={false}
+                business={true}
                 businessCheck={true}
                 />
                 <BenefitsRow
                 text="Search Engine Indexing"
+                basic={true}
                 basicCheck={false}
+                pro={true}
                 proCheck={false}
+                business={true}
                 businessCheck={true}
                 />
                 <BenefitsRow
                 text="Custom Analytics"
+                basic={true}
                 basicCheck={false}
+                pro={true}
                 proCheck={false}
+                business={true}
                 businessCheck={true}
                 />
             </div>
