@@ -23,8 +23,8 @@ const BenefitsRow = (props) => {
                         <span>{showCheck(props.basicCheck)}</span>
                     </div>
                     <div className="c-benefits--plan">                
-                        <span className="c-benefits--show-title-middle">{props.pro === true ? "Pro" : "" }</span>
-                        <span className="c-benefits--show-title-middle">{showCheck(props.proCheck)}</span>
+                        <span className="c-benefits--show-title-pro">{props.pro === true ? "Pro" : "" }</span>
+                        <span className="c-benefits--show-title-pro-check">{showCheck(props.proCheck)}</span>
                     </div>
                     <div className="c-benefits--plan">
                         <span className="c-benefits--show-title">{props.business === true ? "Business" : "" }</span>
