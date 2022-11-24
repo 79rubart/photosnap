@@ -100,12 +100,12 @@ We want to continue evolving our knowledge on React by taking challenges that go
 
 ## Authors
 
-# Eduardo Arakaki
+### Eduardo Arakaki
 
 - GitHub - [edukaki](https://github.com/edukaki)
 - Linkedin [@eduardo-arakaki](https://www.linkedin.com/in/eduardo-arakaki/)
 
-# Rubens Oliveira
+### Rubens Oliveira
 
 - GitHub - [79rubart](https://github.com/79rubart)
 - Linkedin [@dev-rubensoliveira](https://www.linkedin.com/in/dev-rubensoliveira/)
