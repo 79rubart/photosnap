@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Frontend Mentor - Photosnap Website solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Photosnap Website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW). This project was a contribution between Eduardo Arakaki (https://github.com/edukaki) and Rubens Oliveira (https://github.com/79rubart).
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [Our process](#my-process)
+  - [Built with](#built-with)
+  - [What we learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Authors](#authors)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project consists of a marketing site for a photo-sharing app. The site has 4 pages (Home, Features, Pricing, Stories), with all of them containing the features and informations needed for each one according to their designations. The site's main characteristic is mainly composed by card components that are built and organized differently according to the kind of information it stores, for example, in the "Pricing" page, you can see a three-card section with different plans and their prices. Since the site is for a photo app, there is a gallery of photo albums in the "Stories" page, with each card representing an album, every card contains a photo, the description of the album, as well as a "Read More" button, thus another example of card organizing.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The site is responsive for all sorts of devices.
 
-### `npm test`
+### The challenge
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Users should be able to:
 
-### `npm run build`
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Screenshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Desktop version of the Home Page](./src/assets/designs/desktop-version.jpg)
+![Mobile version of the Home Page](./src/assets/designs/mobile-version.jpg)
+![Tablet version of the Home Page](./src/assets/designs/tablet-version.jpg)
+![Gallery Page](./src/assets/designs/gallery.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Links
 
-### `npm run eject`
+- GitHub Repository: https://github.com/edukaki/photosnap
+- Live Site URL: Coming Soon!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Our process
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+First, we started setting up the React library and Node.js in the VSCode, then we settled all folders needed to make the project work (components, pages, styles, etc). After that, we went on to code the components, from smaller stuff to bigger stuff, from buttons, cards, table rows to sections, galleries, tables to pages. Then, we started working on the firebase database for the "Stories" gallery images and finally, we worked on the app responsiveness to different devices.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Built with
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Desktop-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Node.js](https://nodejs.org/) - React framework
+- [Firebase](https://firebase.google.com/) - For a small image database
 
-## Learn More
+### What we learned
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+We have reinforced our knowledges on React by manipulating the CSS with JSX, by working with conditionals and other existing functions present in the library. Below, you'll see two snippets containing conditionals and useState() examples:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Changing card color and size according to its position on the Pricing Card Section (.src/components/PricingCard/)
 
-### Code Splitting
+```js
+    <div className={props.cardSize === 'big' ?
+    props.bgColor === 'black' ? 'c-pricing__card c-pricing__card--big c-pricing__card--bgBlack' : 'c-pricing__card c-pricing__card--big c-pricing__card--bgLightGrey' : 
+    props.bgColor === 'black' ? 'c-pricing__card c-pricing__card--small c-pricing__card--bgBlack' : 'c-pricing__card c-pricing__card--small c-pricing__card--bgLightGrey'}>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Changing between monthly/yearly payment inside every plan card using useState() when clicking checkbox (.src/components/Subscription/)
 
-### Analyzing the Bundle Size
+```js
+const Subscription = () => {
+    const [isActive, setIsActive] = useState(false);
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    return (  
+        <section className="c-pricing__container">
+            <div className="c-pricing__switch">
+                <span className={!isActive ? "c-pricing__time" : "c-pricing__time c-pricing__time--active"}>Monthly</span>
+                    <label className="switch">
+                        <input type="checkbox" onClick={() => {setIsActive(!isActive)}}/>
+                        <span className="slider round"></span>
+                    </label>
+                <span className={isActive ? "c-pricing__time" : "c-pricing__time c-pricing__time--active" }>Yearly</span>
+            </div>
+            <div>
+                <PricingCard bgColor="" cardSize=""
+                    title="Business"
+                    description="Additional features available such as more detailed metrics. Recommended for business owners."
+                    price={!isActive ? "$99.00" : "$990.00"}
+                    time={!isActive ? "per month" : "per year"}
+                />
+            </div>
+        </section>
+    )
+}
+```
 
-### Making a Progressive Web App
+### Continued development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+We want to continue evolving our knowledge on React by taking challenges that go beyong the CSS manipulation with JSX. We'll certainly take more projects that require features that we still don't know in order to find more and more solutions to increase our repertory.
 
-### Advanced Configuration
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Eduardo Arakaki
 
-### Deployment
+- GitHub - [edukaki](https://github.com/edukaki)
+- Linkedin [@eduardo-arakaki](https://www.linkedin.com/in/eduardo-arakaki/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Rubens Oliveira
 
-### `npm run build` fails to minify
+- GitHub - [79rubart](https://github.com/79rubart)
+- Linkedin [@dev-rubensoliveira](https://www.linkedin.com/in/dev-rubensoliveira/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**README written by Rubens Oliveira
