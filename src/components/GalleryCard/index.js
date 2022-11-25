@@ -3,7 +3,7 @@ import BtnArrow from "../BtnArrow"
 
 const GalleryCard = (props) => {
     return(
-        <div className="c-gallery-card" key={props.key}>
+        <div className="c-gallery-card">
             <img src={props.src} alt={props.alt} className="c-gallery-card--image" />
             <div className="c-gallery-card--description">
                 <div className="c-gallery-card--info">
