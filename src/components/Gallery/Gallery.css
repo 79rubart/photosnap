@@ -1,0 +1,8 @@
+.c-gallery{
+    display: flex;
+    margin: 0 auto;
+}
+
+.c-gallery__card{
+    max-width: 25%;
+}
