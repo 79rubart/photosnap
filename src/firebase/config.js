@@ -5,13 +5,13 @@ import { getStorage } from "firebase/storage";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBxP0hxcnkxk0Efbjv4KymDNrf5q9ZDhd8",
-    authDomain: "photosnapgallery.firebaseapp.com",
-    projectId: "photosnapgallery",
-    storageBucket: "photosnapgallery.appspot.com",
-    messagingSenderId: "40224944884",
-    appId: "1:40224944884:web:3cee34d52c52f8ae5724a1",
-    measurementId: "G-PWKZLH3CY8"
+  apiKey: "AIzaSyAaX12n1s-y0t677v2FcbmwEDkIaXNKNsI",
+  authDomain: "photosnap-42232.firebaseapp.com",
+  projectId: "photosnap-42232",
+  storageBucket: "photosnap-42232.appspot.com",
+  messagingSenderId: "248904360011",
+  appId: "1:248904360011:web:872b57eae331a84244adce",
+  measurementId: "G-ZKBB8RZ37G"
   };
   
   // Initialize Firebase
