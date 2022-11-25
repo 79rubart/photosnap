@@ -7,13 +7,14 @@ const useImageCollection = () => {
     const imageCollectionRef = collection(db, 'photo-gallery')
 
     useEffect(() => {
-        const getData = async () => {
-            const data = await getDocs(imageCollectionRef)
-            setImages(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+        if(images.length === 0){
+            const getData = async () => {
+                const data = await getDocs(imageCollectionRef)
+                setImages(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+            }
+            getData();
         }
-        getData();
-    }, [])
-
+    }, [imageCollectionRef])
     return images;
 }
 
