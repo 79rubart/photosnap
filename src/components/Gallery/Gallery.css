@@ -12,5 +12,7 @@
 
 .c-gallery__card:hover{
     transform: translateY(-2rem);
-    border-bottom: solid .4rem #BC7198;
+    border-bottom: solid .4rem ;
+    border-image-source: var(--main-accent);
+    border-image-width: 100%;
 }
