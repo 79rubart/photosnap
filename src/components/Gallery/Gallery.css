@@ -1,8 +1,16 @@
 .c-gallery{
     display: flex;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .c-gallery__card{
-    max-width: 25%;
+    width: 25%;
+    margin-bottom: -.5rem;
+    transition: ease-in .2s;
+}
+
+.c-gallery__card:hover{
+    transform: translateY(-2rem);
+    border-bottom: solid .4rem #BC7198;
 }
