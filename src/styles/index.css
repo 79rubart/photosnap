@@ -30,6 +30,9 @@
 body{
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 250px;
 
   color: var(--black);
   font-family: var(--font-family);

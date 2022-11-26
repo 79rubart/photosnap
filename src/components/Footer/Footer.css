@@ -5,6 +5,8 @@
     background-color: var(--black);
     padding: 4rem 8%;
     min-height: 250px;
+    position: absolute;
+    bottom: 0;
 }
 
 
