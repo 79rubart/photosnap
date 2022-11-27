@@ -30,6 +30,10 @@
   --footerTop-background: url('../assets/img/shared/desktop/bg-beta.jpg') no-repeat
 }
 
+a{
+  text-decoration: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
