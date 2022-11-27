@@ -13,7 +13,9 @@ const GalleryCard = (props) => {
                 </div>
                 <div className="c-gallery-card--button">
                     <BtnArrow color="white"
-                    text="Read More"/>
+                    text="Read More"
+                    space={true}
+                    />
                 </div>
             </div>
         </div> 

@@ -1,17 +1,26 @@
 .c-btn__arrow{
     display: flex;
     gap: 1rem;
-
+    width: 100%;
+    
     cursor: pointer;
-
+    
     background-color: transparent;
     border: none;
     padding: 1rem .5rem;
-
+    
     font-family: var(--font-family);
     text-transform: uppercase;
     font-weight: var(--weight-strong);
     letter-spacing: var(--button-space);
+}
+
+.c-btn__arrow--space{
+    justify-content: space-between;
+}
+
+.c-btn__arrow:hover{
+    text-decoration: underline;
 }
 
 .c-btn__arrow--colorWhite{
