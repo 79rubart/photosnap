@@ -47,19 +47,23 @@ body {
   font-weight: var(--weight-regular);
 }
 
+@media screen and (max-width: 1440px) {
+
+  body{
+    padding-bottom: 20rem;
+  }
+  
+}
+
 @media screen and (max-width: 768px) {
 
   body{
-    padding-bottom: 15rem;
+    padding-bottom: 40rem;
   }
+
 
   header {
     margin-top: 165px;
-  }
-
-  main {
-    margin-bottom: 24rem;
-
   }
 
 }
