@@ -17,10 +17,6 @@
 }
 
 @media screen and (max-width: 1440px) {
-    .c-gallery{
-        padding-bottom: 4rem;
-    }
-
     .c-gallery__card{
         max-width: none;
         width: 50%;
