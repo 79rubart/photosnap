@@ -35,7 +35,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   position: relative;
-  padding-bottom: 20rem;
+  padding-bottom: 15rem;
 
   color: var(--black);
   font-family: var(--font-family);
