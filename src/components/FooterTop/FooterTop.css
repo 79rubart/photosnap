@@ -21,3 +21,14 @@
     font-weight: var(--weight-strong);
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 768px) {
+    .l-footer-top{
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .l-footer-top__text{
+        width: 100%;
+    }
+}
