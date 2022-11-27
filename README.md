@@ -4,15 +4,19 @@ This is a solution to the [Photosnap Website challenge on Frontend Mentor](https
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [Our process](#my-process)
-  - [Built with](#built-with)
-  - [What we learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Authors](#authors)
+- [Frontend Mentor - Photosnap Website solution](#frontend-mentor---photosnap-website-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [Our process](#our-process)
+    - [Built with](#built-with)
+    - [What we learned](#what-we-learned)
+    - [Continued development](#continued-development)
+  - [Authors](#authors)
+    - [Eduardo Arakaki](#eduardo-arakaki)
+    - [Rubens Oliveira](#rubens-oliveira)
 
 ## Overview
 
@@ -36,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- GitHub Repository: https://github.com/edukaki/photosnap
-- Live Site URL: Coming Soon!
+- [GitHub Repository](https://github.com/edukaki/photosnap)
+- [Live Site URL](https://edukaki-photosnap.netlify.app)
 
 ## Our process
 
@@ -49,8 +53,8 @@ First, we started setting up the React library and Node.js in the VSCode, then w
 - CSS custom properties
 - Flexbox
 - Desktop-first workflow
+- [React-router-dom](https://reactrouter.com/)
 - [React](https://reactjs.org/) - JS library
-- [Node.js](https://nodejs.org/) - React framework
 - [Firebase](https://firebase.google.com/) - For a small image database
 
 ### What we learned
