@@ -41,6 +41,14 @@ const router = createBrowserRouter([
         path: '/pricing',
         element: <Pricing />
       },
+      {
+        path: '/invitation',
+        element: <div>INVITATION SCREEN</div>
+      },
+      {
+        path: '/stories/:imageName',
+        element: <div>ABOUT IMAGE</div>
+      }
     ],
   },
 ]);

@@ -19,7 +19,7 @@ const MainCard = (props) => {
         <p>{props.text}</p>
         {
           props.btnText ? (
-            <BtnArrow text={props.btnText} color={props.background === 'black' ? 'white' : 'black' } />
+            <BtnArrow text={props.btnText} color={props.background === 'black' ? 'white' : 'black' } path={props.path} />
           ) : ''
         }
       </div>

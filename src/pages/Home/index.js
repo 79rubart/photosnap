@@ -28,6 +28,7 @@ const Home = () => {
                     text="We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone."
                     desktop={image2_desktop} tablet={image2_tablet} mobile={image2_mobile} alt='laptop on the desk'
                     btnText="View the stories"
+                    path='/stories'
                 />
 
                 <MainCard background="white" textPosition=""
@@ -35,6 +36,7 @@ const Home = () => {
                     text="Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it."
                     desktop={image3_desktop} tablet={image3_tablet} mobile={image3_mobile} alt='photographer'
                     btnText="View the stories"
+                    path='/stories'
                 />
 
                 <FeaturesSection />

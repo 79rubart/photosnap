@@ -2,7 +2,9 @@ import "./GalleryCard.css"
 import BtnArrow from "../BtnArrow"
 
 const GalleryCard = (props) => {
-    return(
+    const path = `/stories/${props.title.toLowerCase().replace(/ /g, '_')}`
+
+    return (
         <div className="c-gallery-card">
             <img src={props.src} alt={props.alt} className="c-gallery-card--image" />
             <div className="c-gallery-card--description">
@@ -13,12 +15,13 @@ const GalleryCard = (props) => {
                 </div>
                 <div className="c-gallery-card--button">
                     <BtnArrow color="white"
-                    text="Read More"
-                    space={true}
+                        text="Read More"
+                        space={true}
+                        path={path}
                     />
                 </div>
             </div>
-        </div> 
+        </div>
     )
 
 }

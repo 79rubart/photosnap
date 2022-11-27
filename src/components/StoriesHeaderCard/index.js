@@ -4,6 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 import './StoriesHeaderCard.css'
 
 const StoriesHeaderCard = (props) => {
+    const path = `/stories/${props.title.toLowerCase().replace(/ /g, '_')}`
 
     const desktop = useMediaQuery({ minWidth: 1441 })
     const tablet = useMediaQuery({ minWidth: 769, maxWidth: 1440 })
@@ -18,7 +19,7 @@ const StoriesHeaderCard = (props) => {
                 <p>{props.text}</p>
                 {
                     props.btnText ? (
-                        <BtnArrow text={props.btnText} color={props.background === 'black' ? 'white' : 'black'} />
+                        <BtnArrow text={props.btnText} color={props.background === 'black' ? 'white' : 'black'} path={path} />
                     ) : ''
                 }
             </div>

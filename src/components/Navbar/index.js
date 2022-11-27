@@ -26,7 +26,7 @@ const Navbar = () => {
                         <Link to='/pricing' onClick={() => {setIsActive(!isActive)}}>Pricing</Link>
                     </li>
                 </ul>
-                <BtnDefault bgColor='black' text='Get an invite' />
+                <Link to='/invitation'><BtnDefault bgColor='black' text='Get an invite' /></Link>
                 <div className={!isActive ? 'c-navbar__hamburger' : 'c-navbar__hamburger c-navbar__hamburger--active'} onClick={() => { setIsActive(!isActive) }}>
                     <span className='c-hamburger__bar'></span>
                     <span className='c-hamburger__bar'></span>

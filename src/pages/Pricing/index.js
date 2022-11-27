@@ -4,6 +4,7 @@ import BenefitsTable from "../../components/BenefitsTable/index"
 import desktop from "../../assets/img/pricing/desktop/hero.jpg"
 import tablet from "../../assets/img/pricing/tablet/hero.jpg"
 import mobile from "../../assets/img/pricing/mobile/hero.jpg"
+import FooterTop from "../../components/FooterTop"
 
 const Pricing = () => {
     return (
@@ -18,6 +19,7 @@ const Pricing = () => {
             <main>
                 <Subscription />
                 <BenefitsTable />
+                <FooterTop />
             </main>
         </>
     )
