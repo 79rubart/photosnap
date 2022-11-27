@@ -1,7 +1,6 @@
 .c-btn__arrow{
     display: flex;
     gap: 1rem;
-    width: 100%;
     
     cursor: pointer;
     
@@ -16,6 +15,7 @@
 }
 
 .c-btn__arrow--space{
+    width: 100%;
     justify-content: space-between;
 }
 
