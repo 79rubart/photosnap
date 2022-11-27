@@ -6,7 +6,7 @@ const BtnArrow = (props) => {
     return (
         <Link to={props.text.toLowerCase() === 'get an invite' ? '/invitation' : props.path}>
             <button className={props.color === 'white' ?
-                props.space == true ? 'c-btn__arrow c-btn__arrow--space c-btn__arrow--colorWhite' : 'c-btn__arrow c-btn__arrow--colorWhite'
+                props.space === true ? 'c-btn__arrow c-btn__arrow--space c-btn__arrow--colorWhite' : 'c-btn__arrow c-btn__arrow--colorWhite'
                 : 'c-btn__arrow'} >
                 {props.text}
                 <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
