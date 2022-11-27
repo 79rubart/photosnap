@@ -1,12 +1,11 @@
 .c-gallery{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    margin: 0 auto;
 }
 
 .c-gallery__card{
     width: 25%;
-    margin-bottom: -.5rem;
     transition: ease-in .2s;
 }
 
@@ -15,4 +14,21 @@
     border-bottom: solid .4rem ;
     border-image-source: var(--main-accent);
     border-image-width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+    .c-gallery{
+        padding-bottom: 4rem;
+    }
+
+    .c-gallery__card{
+        max-width: none;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c-gallery__card{
+        width: 100%;
+    }
 }
