@@ -4,6 +4,7 @@ import desktop from '../../assets/img/features/desktop/hero.jpg'
 import tablet from '../../assets/img/features/tablet/hero.jpg'
 import mobile from '../../assets/img/features/mobile/hero.jpg'
 import FeaturesSection from '../../components/FeaturesSection'
+import FooterTop from '../../components/FooterTop'
 
 const Features = () => {
     return (
@@ -17,6 +18,7 @@ const Features = () => {
             </header>
             <main>
                 <FeaturesSection featPage={true} />
+                <FooterTop />
             </main>
         </>
     )
